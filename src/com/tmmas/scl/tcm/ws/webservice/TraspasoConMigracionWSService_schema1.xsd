@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://webservice.ws.tcm.scl.tmmas.com/" xmlns:tns="http://webservice.ws.tcm.scl.tmmas.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="traspasarConMigracion" type="tns:traspasarConMigracion"/>
+
+  <xs:element name="traspasarConMigracionResponse" type="tns:traspasarConMigracionResponse"/>
+
+  <xs:complexType name="traspasarConMigracion">
+    <xs:sequence>
+      <xs:element name="arg0" type="tns:traspasoConMigracionINDTO" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="traspasoConMigracionINDTO">
+    <xs:sequence>
+      <xs:element name="codigoClienteDestino" type="xs:string" minOccurs="0"/>
+      <xs:element name="codigoCuentaDestino" type="xs:string" minOccurs="0"/>
+      <xs:element name="codigoPlanDestino" type="xs:string" minOccurs="0"/>
+      <xs:element name="comentarioOS" type="xs:string" minOccurs="0"/>
+      <xs:element name="nombreUsuario" type="xs:string" minOccurs="0"/>
+      <xs:element name="numeroAbonado" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="traspasarConMigracionResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:traspasoConMigracionOUTDTO" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="traspasoConMigracionOUTDTO">
+    <xs:sequence>
+      <xs:element name="codigoRetorno" type="xs:string" minOccurs="0"/>
+      <xs:element name="mensajeRetorno" type="xs:string" minOccurs="0"/>
+      <xs:element name="numeroEvento" type="xs:string" minOccurs="0"/>
+      <xs:element name="numeroOS" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

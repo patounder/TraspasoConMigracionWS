@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Class-Path: TraspasoConMigracionCommon.jar 
+ FrameworkBase.jar 
+ FrameworkBase20.jar 
+ commons-configuration-1.5.jar 
+ commons-lang-2.4.jar 
+ commons-logging.jar 
+ log4j-1.2.14.jar 
+ TraspasoConMigracionEJBClient.jar
+
